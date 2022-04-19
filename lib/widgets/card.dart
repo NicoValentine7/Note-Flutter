@@ -55,7 +55,7 @@ class NoteCard extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const ManageNote(
+                        builder: (context) => ManageNote(
                           title: 'View Note',
                           isEdit: true,
                           isView: true,
@@ -70,7 +70,7 @@ class NoteCard extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const ManageNote(
+                        builder: (context) => ManageNote(
                           title: 'Edit Note',
                           isEdit: true,
                         ),
