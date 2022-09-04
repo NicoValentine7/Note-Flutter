@@ -15,10 +15,6 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColor.background,
-      appBar: AppBar(
-        title: const Text('Notes'),
-        backgroundColor: AppColor.primary,
-      ),
       body: ListView.builder(
         itemCount: 6,
         itemBuilder: (context, index) {

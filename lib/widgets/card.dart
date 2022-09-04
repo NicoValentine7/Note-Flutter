@@ -55,7 +55,7 @@ class NoteCard extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ManageNote(
+                        builder: (context) => const ManageNote(
                           title: 'View Note',
                           isEdit: true,
                           isView: true,
@@ -70,7 +70,7 @@ class NoteCard extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ManageNote(
+                        builder: (context) => const ManageNote(
                           title: 'Edit Note',
                           isEdit: true,
                         ),
@@ -104,7 +104,7 @@ class _CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      child: Container(
+      child: SizedBox(
         height: 45,
         width: MediaQuery.of(context).size.width / 3.5,
         child: Icon(icon),
